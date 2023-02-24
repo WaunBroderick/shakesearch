@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import logo from "./logo.svg";
 import "./App.css";
 
 import {
@@ -26,14 +25,17 @@ function App() {
   const [messageApi, contextHolder] = message.useMessage();
   const [passageData, setPassageData] = useState([]);
 
+  // Run search on queryPhrase change
   useEffect(() => {
     Controller.search();
   }, [queryPhrase]);
 
+  // Set array to empty, so table is cleared
   const clearTable = () => {
     setPassageData([]);
   };
 
+  // Collect values from form
   const onFinish = (values) => {
     setQueryPhrase(values.query);
   };
@@ -75,6 +77,7 @@ function App() {
     },
   };
 
+  // Defing table columns
   const columns = [
     {
       title: "Number",

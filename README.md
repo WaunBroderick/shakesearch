@@ -26,6 +26,7 @@ Pulley Takehome Assignment
 - [Introduction](#introduction) :pushpin:
 - [Usage](#usage) :video_game:
 - [Installation](#installation) :building_construction:
+- [Testing](#testing) :construction_worker:
 - [Changes](#changes) :sparkles:
 
 ---
@@ -70,12 +71,25 @@ $ go run main.go
 > **Requirements**
 > NodeJS
 > npm
+> Go
 
 ```bash
 $ cd client && npm i
 ```
 
-_Accept all paramters following setup.sh script to ensure smooth installation_
+---
+
+### Testing
+
+_Automated checking of tests has not yet been incorporated into the application so they much be done manually for now._
+
+_To Run Go tests_
+
+```bash
+$ go test
+# To test code coverages
+go test -coverprofile=coverage
+```
 
 ---
 
@@ -86,6 +100,18 @@ _Accept all paramters following setup.sh script to ensure smooth installation_
 - Improved visual presentation
 - Switched out table for one easier to parse, w pagination, and result grouping
 - Added highlighting to the query words being searched
+- Added Alert popup for query that returns null
+- Added form validation for empty string
 - Removed case sensitivity of query
 - Added clear button to clear the table
+- Added a couple tests for the GO Server
 - Added favicon
+
+##### If More Time Permitted
+
+- Full Go test code coverage
+- Automated React Component tests
+- Code test check on build in CI/CD pipeline (Jenkins/CicleCI?)
+- A history of searched items on the front-end
+- Dockerize the Application
+- Add state management to the FE (recoil or redux) so I can implment some sort of caching
