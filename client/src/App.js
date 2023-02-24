@@ -14,7 +14,6 @@ import {
   Input,
   message,
   Table,
-  Switch,
 } from "antd";
 
 import Keywords from "react-keywords";
@@ -43,8 +42,6 @@ function App() {
     search: () => {
       // Prevent default alternative catch
       if (!queryPhrase) return;
-      const form = document.getElementById("form");
-      const data = Object.fromEntries(new FormData(form));
       const response = fetch(
         `https://pulley-ss-server.onrender.com/search?q=${queryPhrase}`
       ).then((response) => {

@@ -1,30 +1,93 @@
-# ShakeSearch
+<div align="center">
+<h1 align="center">
 
-Welcome to the Pulley Shakesearch Take-home Challenge! In this repository,
-you'll find a simple web app that allows a user to search for a text string in
-the complete works of Shakespeare.
+<a href=""><img src="./assets/imgs/Neuralink_logo.svg.png" alt="Markdownify" width="400"></a>
 
-You can see a live version of the app at
-https://pulley-shakesearch.onrender.com/. Try searching for "Hamlet" to display
-a set of results.
+<br>
+Pulley Takehome Assignment
+</h1>
 
-In it's current state, however, the app is in rough shape. The search is
-case sensitive, the results are difficult to read, and the search is limited to
-exact matches.
+</div>
 
-## Your Mission
+---
 
-Improve the app! Think about the problem from the **user's perspective**
-and prioritize your changes according to what you think is most useful.
+```
+@author = "Waun Broderick"
+@purpose= "Pulley Takehome Assignment"
+@date = "24/02/2023 - DD/MM/YYYY"
 
-You can approach this with a back-end, front-end, or full-stack focus.
+@email = "waunbroderick@gmail.com"
 
-## Evaluation
+@status = "DEV"
+```
 
-We will be primarily evaluating based on how well the search works for users. A search result with a lot of features (i.e. multi-words and mis-spellings handled), but with results that are hard to read would not be a strong submission.
+---
 
-## Submission
+# Contents
 
-1. Fork this repository and send us a link to your fork after pushing your changes.
-2. Render (render.com) hosting, the application deploys cleanly from a public url.
-3. In your submission, share with us what changes you made and how you would prioritize changes if you had more time.
+- [Introduction](#introduction) :pushpin:
+- [Usage](#usage) :video_game:
+- [Installation](#installation) :building_construction:
+- [Changes](#changes) :sparkles:
+
+---
+
+### Introduction
+
+This application allows a user to query Shakespeare's Hamlet to search for the presence of words within its passages.
+
+An over view of the requirements can be found in the [Original README](<./README(README(Pulley).md)>).
+
+---
+
+## Usage
+
+#### Web Application
+
+The Web-Application is avaialable, [HERE](https://pulley-ss-client.onrender.com/) (https://pulley-ss-client.onrender.com/)
+
+Enter a phrase in the query field to search for the presence of your phrase in the passages. The query is not case-sensitive, and may take some time to load.
+
+#### Local Installation
+
+_Client_
+
+```bash
+$ cd client && npm i
+$ npm run start
+```
+
+_Server_
+
+```bash
+$ go run main.go
+```
+
+---
+
+### Installation
+
+**Method 1: CMD Line**
+
+> **Requirements**
+> NodeJS
+> npm
+
+```bash
+$ cd client && npm i
+```
+
+_Accept all paramters following setup.sh script to ensure smooth installation_
+
+---
+
+### Changes
+
+- Added React Front-end
+- Used AntDesign (familiarity)
+- Improved visual presentation
+- Switched out table for one easier to parse, w pagination, and result grouping
+- Added highlighting to the query words being searched
+- Removed case sensitivity of query
+- Added clear button to clear the table
+- Added favicon
