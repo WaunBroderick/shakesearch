@@ -1,8 +1,6 @@
 <div align="center">
 <h1 align="center">
 
-<a href=""><img src="./assets/imgs/Neuralink_logo.svg.png" alt="Markdownify" width="400"></a>
-
 <br>
 Pulley Takehome Assignment
 </h1>
