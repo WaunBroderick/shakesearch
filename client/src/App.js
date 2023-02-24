@@ -23,7 +23,6 @@ const { Header, Footer, Content } = Layout;
 const { Title } = Typography;
 
 function App() {
-  const [casesensitive, setCasesensitive] = useState(true);
   const [queryPhrase, setQueryPhrase] = useState("");
   const [messageApi, contextHolder] = message.useMessage();
   const [passageData, setPassageData] = useState([]);
@@ -31,11 +30,6 @@ function App() {
   useEffect(() => {
     Controller.search();
   }, [queryPhrase]);
-
-  const onChange = (checked) => {
-    setCasesensitive(!casesensitive);
-    console.log(casesensitive);
-  };
 
   const clearTable = () => {
     setPassageData([]);
@@ -128,10 +122,6 @@ function App() {
                   ]}
                 >
                   <Input type="text" id="query" name="query" />
-                </Form.Item>
-
-                <Form.Item label="Case Sensitivity">
-                  <Switch defaultChecked onChange={onChange} />
                 </Form.Item>
                 <Row>
                   <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
