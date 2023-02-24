@@ -1,0 +1,23 @@
+{
+  "name": "shakesearch",
+  "version": "1.0.0",
+  "description": "Pulley takehome work assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd client && npm start && npm server",
+    "dev": "concurrently --kill-others \"cd client && npm run start\" \"cd .. && cd server && npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaunBroderick/shakesearch.git"
+  },
+  "author": "Waun Broderick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaunBroderick/shakesearch/issues"
+  },
+  "homepage": "https://github.com/WaunBroderick/shakesearch#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

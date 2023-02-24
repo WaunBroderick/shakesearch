@@ -15,12 +15,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "go run main.go",
+    "server": "cd .. && cd server && go run main.go",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -52,7 +52,7 @@ function App() {
       const form = document.getElementById("form");
       const data = Object.fromEntries(new FormData(form));
       const response = fetch(
-        `http://localhost:3001/search?q=${queryPhrase}`
+        `https://pulley-ss-server.onrender.com/search?q=${queryPhrase}`
       ).then((response) => {
         response.json().then((results) => {
           // Render err message if no results but leave table populated
